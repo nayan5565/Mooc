@@ -5,6 +5,7 @@ import 'package:mooc/controllers/authController.dart';
 import 'package:mooc/views/introduction/introductionView.dart';
 import 'package:mooc/views/landing/landingView.dart';
 import 'views/signIn/signInView.dart';
+import 'views/splash/splashView.dart';
 
 void main() {
   Get.put(AuthController());
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: LandingView(),
+      home: SplashView(),
     );
   }
 }

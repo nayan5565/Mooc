@@ -3,6 +3,10 @@ import 'package:get/get.dart';
 import 'package:mooc/tools/customWidget.dart';
 import 'package:mooc/views/signIn/signInView.dart';
 import 'package:mooc/views/signUp/signUpView.dart';
+import 'package:mooc/views/videoPlayer/videoPlayer2View.dart';
+import 'package:mooc/views/videoPlayer/videoPlayerView.dart';
+import 'package:mooc/views/videoPlayer/vlcVideoPlayerView.dart';
+import 'package:mooc/views/videoPlayer/youtubeVideoPlayerView.dart';
 
 class LandingView extends StatelessWidget {
   @override
@@ -79,6 +83,7 @@ class LandingView extends StatelessWidget {
 
   Widget _buildGoogleButton() {
     return buildRoundedButton(
+        onTap: () => Get.to(() => VideoPlayerView()),
         color: Colors.white,
         radius: 0,
         text: Row(
@@ -100,7 +105,7 @@ class LandingView extends StatelessWidget {
 
   Widget _buildFacebookButton() {
     return buildRoundedButton(
-        onTap: () => Get.to(SignInView()),
+        onTap: () => Get.to(() => VideoPlayer2View()),
         color: Colors.white,
         radius: 0,
         text: Row(

@@ -33,6 +33,9 @@ dependencies:
   fluttertoast: ^8.0.3
   introduction_screen: ^2.1.0
   youtube_player_flutter: ^8.0.0
+  video_player: ^2.1.1
+  flutter_vlc_player: ^6.0.2
+  chewie: ^1.0.0
 
 dev_dependencies:
   flutter_test:
